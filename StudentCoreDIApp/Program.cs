@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-// Register StudentService for Dependency injection
+// Register StudentService for DI
 builder.Services.AddScoped<IStudentService, StudentService>();
 
 var app = builder.Build();
